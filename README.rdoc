@@ -3,6 +3,8 @@
 This is just a base for experimentation so I don't have to keep re-writing these
 basic models and controllers and whatnot.
 
+       git clone git@github.com:wulftone/rails-experiment-base.git base && cd base && bundle install && rake db:migrate && rails s -p 3002
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
