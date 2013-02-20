@@ -1,3 +1,8 @@
+== Experiment
+
+This is just a base for experimentation so I don't have to keep re-writing these
+basic models and controllers and whatnot.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
