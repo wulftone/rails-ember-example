@@ -12,22 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+// These things need to be loaded in the right order..!
+
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require_self
-//= require base
-Base = Ember.Application.create();
-//= require_tree .
-Handlebars.registerHelper("debug", function(optionalValue) {
-  console.log("==Current Context==");
-  console.log(this);
 
-  if (optionalValue) {
-    console.log("==Value==");
-    console.log(optionalValue);
-  }
-});
+// look in base.js to see some more requires.
+//= require base
+
+// Start up the application (a lot of stuff is "created" by convention,
+// so you get loads of functionality with just this already)
+Base = Ember.Application.create();
+
+//= require_tree .
 
 Ember.LOG_BINDINGS = true
 // Ember.LOG_STACKTRACE_ON_DEPRECATION = true
