@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20130219235612) do
   create_table "cars", :force => true do |t|
     t.string   "color"
     t.string   "engine"
-    t.string   "model"
+    t.string   "model_name"
     t.integer  "year"
     t.integer  "make_id"
     t.datetime "created_at", :null => false

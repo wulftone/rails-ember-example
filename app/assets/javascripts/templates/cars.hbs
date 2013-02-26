@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+{{#each controller}}
+  {{year}}<br />
+{{/each}}
+<div>
+  {{outlet}}
+</div>
+{{#linkTo "cars.new"}}new{{/linkTo}}

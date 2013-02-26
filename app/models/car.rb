@@ -1,6 +1,4 @@
 class Car < ActiveRecord::Base
   belongs_to :make
-  belongs_to :color
-  belongs_to :engine
-  attr_accessible :model, :year
+  attr_accessible :model_name, :year, :color, :engine, :make_id
 end

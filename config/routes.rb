@@ -1,5 +1,6 @@
 Base::Application.routes.draw do
-  root to: 'cars#index'
+  root to: 'home#index'
+  resources :cars
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/emberjs/ember-rails.git
+  revision: ee050448fad47d77c80db318ef1d86d8f50690bd
+  specs:
+    ember-rails (0.10.1)
+      active_model_serializers
+      barber
+      execjs (>= 1.2)
+      railties (>= 3.1)
+
+GIT
   remote: git://github.com/pry/pry.git
   revision: 2c1a70be182128f19140cf2aa0aad8b558331ff3
   specs:
@@ -23,6 +33,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_model_serializers (0.6.0)
+      activemodel (>= 3.0)
     activemodel (3.2.12)
       activesupport (= 3.2.12)
       builder (~> 3.0.0)
@@ -39,6 +51,8 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     awesome_print (1.1.0)
+    barber (0.3.0)
+      execjs
     builder (3.0.4)
     coderay (1.0.8)
     coffee-rails (3.2.2)
@@ -79,6 +93,8 @@ GEM
       pry (~> 0.9.10)
     pry-rails (0.2.2)
       pry (>= 0.9.10)
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -134,10 +150,12 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   coffee-rails (~> 3.2.1)
+  ember-rails!
   jquery-rails
   pry!
   pry-debugger
   pry-rails
+  quiet_assets
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   sqlite3

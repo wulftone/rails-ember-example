@@ -1,0 +1,17 @@
+<header>
+  <h1>App title: {{title}}</h1>
+
+  <nav>
+    {{#linkTo "index"}}Index{{/linkTo}}
+    {{#linkTo "about"}}About{{/linkTo}}
+    {{#linkTo "cars"}}Cars{{/linkTo}}
+  </nav>
+</header>
+
+<div id='wrapper'>
+  {{outlet}}
+</div>
+
+<footer>
+  &copy;2013 Igor's Publishing, Inc.
+</footer>

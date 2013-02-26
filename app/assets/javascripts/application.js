@@ -12,4 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require base
+Base = Ember.Application.create();
 //= require_tree .
+Handlebars.registerHelper("debug", function(optionalValue) {
+  console.log("==Current Context==");
+  console.log(this);
+
+  if (optionalValue) {
+    console.log("==Value==");
+    console.log(optionalValue);
+  }
+});
+
+Ember.LOG_BINDINGS = true
+// Ember.LOG_STACKTRACE_ON_DEPRECATION = true

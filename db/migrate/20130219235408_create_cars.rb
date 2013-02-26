@@ -3,7 +3,7 @@ class CreateCars < ActiveRecord::Migration
     create_table :cars do |t|
       t.string :color
       t.string :engine
-      t.string :model
+      t.string :model_name
       t.integer :year
 
       t.references :make

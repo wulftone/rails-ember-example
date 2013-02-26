@@ -1,0 +1,5 @@
+<h2>All Cars</h2>
+{{#each controllers.cars}}
+  {{#linkTo "car" this}}{{year}} {{modelName}}{{/linkTo}}
+  {{#linkTo "car.edit" this}}Edit{{/linkTo}}<br />
+{{/each}}

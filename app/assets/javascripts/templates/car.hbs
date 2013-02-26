@@ -1,0 +1,19 @@
+<h1>car template title: {{title}}</h1>
+<p>
+  computed property: {{foo}}
+</p>
+car year: {{year}}<br />
+car model: {{modelName}}<br />
+car engine: {{engine}}<br />
+car color: {{color}}<br />
+
+<h2>
+  Car.hbs Outlet
+</h2>
+
+{{outlet}}
+
+<p>
+  {{#linkTo "car.edit"}}edit{{/linkTo}}
+  {{#linkTo "car"}}show{{/linkTo}}
+</p>
