@@ -7,6 +7,9 @@ included some basic usage that you don't normally find online, namely:
 * Showing both single records and arrays of records
 * Creating and editing that data in forms! OMG! (Why don't more examples have this?!)
 * Regular CRUD actions--create, read, update, delete
+* As many helpful comments as I thought were necessary
+
+Do this:
 
        git clone git@github.com:wulftone/rails-ember-example.git && cd rails-ember-example && bundle install && rake db:migrate && rails s -p 3003
 
