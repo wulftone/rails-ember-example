@@ -24,5 +24,6 @@ Base = Ember.Application.create();
 
 //= require_tree .
 
+// Just for kicks, we will log our bindings.
 Ember.LOG_BINDINGS = true
 // Ember.LOG_STACKTRACE_ON_DEPRECATION = true

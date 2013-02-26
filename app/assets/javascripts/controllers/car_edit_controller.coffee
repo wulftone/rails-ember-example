@@ -8,3 +8,6 @@ Base.CarEditController = Ember.ObjectController.extend
 
   # Just a title to pass to the template, for fun
   title: "car edit controller"
+
+  submit: (model) ->
+    model.store.commit()

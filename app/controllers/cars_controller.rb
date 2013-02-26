@@ -14,6 +14,12 @@ class CarsController < ApplicationController
     render json: @car.to_json(root: true)
   end
 
+  def update
+    @car = Car.find params[:id]
+    @car.update_attributes params[:car]
+    render json: @car.to_json(root: true)
+  end
+
   def destroy
     @car = Car.destroy params[:id]
     render json: @car.to_json(root: true)

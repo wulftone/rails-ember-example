@@ -1,1 +1,6 @@
-Base.CarEditView = Ember.View.extend()
+Base.CarEditView = Ember.View.extend
+  click: (e) ->
+    e.target
+
+  input: (e) ->
+    console.log e.target.value

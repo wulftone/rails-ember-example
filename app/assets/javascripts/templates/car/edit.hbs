@@ -4,4 +4,5 @@
   year: {{view Ember.TextField valueBinding="controllers.car.year"}}<br />
   modelName: {{view Ember.TextField valueBinding="controllers.car.modelName"}}<br />
   color: {{view Ember.TextField valueBinding="controllers.car.color"}}<br />
+  <button {{action "submit" controllers.car}}>Submit</button>
 </form>
