@@ -5,4 +5,3 @@ Base.CarsNewController = Ember.ObjectController.extend
   submit: (controller) ->
     model = controller.get 'model'
     model.get('transaction').commit() if model.validate()
-    debugger
