@@ -1,7 +1,8 @@
 <h1>{{title}}</h1>
 
 {{#each controller}}
-  {{year}}<br />
+  {{id}}: {{color}} {{year}} {{make.name}} {{modelName}}, {{engine}}
+  <span {{action "destroy" this}} class='destroy'>x</span><br />
 {{/each}}
 
 <div>

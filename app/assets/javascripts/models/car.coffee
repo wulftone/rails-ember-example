@@ -32,3 +32,4 @@ Base.Car = DS.Model.extend
 
   becameValid: (model) ->
     console.log 'became Valid'
+
