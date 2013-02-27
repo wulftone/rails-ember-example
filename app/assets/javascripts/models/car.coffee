@@ -1,6 +1,10 @@
+attr = DS.attr
+
 Base.Car = DS.Model.extend
-  modelName: DS.attr 'string'
-  color: DS.attr 'string'
-  engine: DS.attr 'string'
-  year: DS.attr 'number'
+  modelName: attr 'string'
+  color: attr 'string'
+  engine: attr 'string'
+  year: attr 'number'
   # make: DS.belongsTo 'App.Make'
+  becameInvalid: (model) ->
+    debugger

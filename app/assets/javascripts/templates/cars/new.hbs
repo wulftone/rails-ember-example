@@ -1,1 +1,8 @@
-<h2>New Car</h2>
+<h2>car new template: {{title}}</h2>
+<form>
+  engine: {{view Ember.TextField valueBinding="controller.engine"}}{{engine}}<br />
+  year: {{view Ember.TextField valueBinding="controller.year"}}<br />
+  modelName: {{view Ember.TextField valueBinding="controller.modelName"}}<br />
+  color: {{view Ember.TextField valueBinding="controller.color"}}<br />
+  <button {{action "submit" controller}}>Submit</button>
+</form>

@@ -15,6 +15,7 @@ Do this:
 
 Start making data!
 
+WARNING: Ember-data is largely un-documented so far, so I'm probably doing things wrong in that regard.
 
 == Welcome to Rails
 

@@ -11,13 +11,14 @@ class CarsController < ApplicationController
 
   def create
     @car = Car.create params[:car]
-    render json: @car.to_json(root: true)
+    status = @car.errors.present? ? :unprocessable_entity : 200
+    render json: @car.to_json(root: true), status: status
   end
 
   def update
     @car = Car.find params[:id]
-    @car.update_attributes params[:car]
-    render json: @car.to_json(root: true)
+    status = @car.update_attributes(params[:car]) ? 200 : :unprocessable_entity
+    render json: @car.to_json(root: true), status: status
   end
 
   def destroy
