@@ -1,8 +1,12 @@
 <h2>car edit template: {{title}}</h2>
 <form>
-  engine: {{view Ember.TextField valueBinding="controllers.car.engine"}}<br />
-  year: {{view Ember.TextField valueBinding="controllers.car.year"}}<br />
-  modelName: {{view Ember.TextField valueBinding="controllers.car.modelName"}}<br />
-  color: {{view Ember.TextField valueBinding="controllers.car.color"}}<br />
+  engine: {{view Ember.TextField valueBinding="controllers.car.engine"}}
+  {{controllers.car.validationErrors.engine.messages}}<br />
+  year: {{view Ember.TextField valueBinding="controllers.car.year"}}
+  {{controllers.car.validationErrors.year.messages}}<br />
+  modelName: {{view Ember.TextField valueBinding="controllers.car.modelName"}}
+  {{controllers.car.validationErrors.modelName.messages}}<br />
+  color: {{view Ember.TextField valueBinding="controllers.car.color"}}
+  {{controllers.car.validationErrors.color.messages}}<br />
   <button {{action "submit" controllers.car}}>Submit</button>
 </form>

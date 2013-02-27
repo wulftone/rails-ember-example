@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+
   def index
     @cars = Car.all
     render json: @cars
@@ -25,4 +26,5 @@ class CarsController < ApplicationController
     @car = Car.destroy params[:id]
     render json: "destroyed"
   end
+
 end

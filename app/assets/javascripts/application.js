@@ -6,6 +6,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require ember-validations
 //= require_self
 
 // look in base.js to see some more requires.

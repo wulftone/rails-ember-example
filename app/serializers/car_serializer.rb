@@ -3,7 +3,7 @@ class CarSerializer < ActiveModel::Serializer
 
   def attributes
     hash = super
-    hash[:errors] = object.errors.messages unless object.errors.blank?
+    hash[:validation_errors] = object.errors.messages.to_json unless object.errors.blank?
     hash
   end
 
