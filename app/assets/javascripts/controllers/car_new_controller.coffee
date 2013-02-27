@@ -4,3 +4,5 @@ Base.CarsNewController = Ember.ObjectController.extend
 
   submit: (model) ->
     model.get('transaction').commit()
+
+  # TODO: handle validation errors

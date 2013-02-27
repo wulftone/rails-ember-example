@@ -12,3 +12,5 @@ Base.CarEditController = Ember.ObjectController.extend
   # I don't know what I'm doing... : |
   submit: (model) ->
     model.get('transaction').commit()
+
+  # TODO: handle validation errors
