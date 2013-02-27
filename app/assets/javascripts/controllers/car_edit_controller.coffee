@@ -9,6 +9,6 @@ Base.CarEditController = Ember.ObjectController.extend
   # Just a title to pass to the template, for fun
   title: "car edit controller"
 
-  # Probably not the most efficient way to do this, but it works.
+  # I don't know what I'm doing... : |
   submit: (model) ->
     model.get('transaction').commit()
