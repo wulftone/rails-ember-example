@@ -16,6 +16,8 @@ Do this:
 Start making data!
 
 WARNING: Ember-data is largely un-documented so far, so I'm probably doing things wrong in that regard.
+However, this article[http://darthdeus.github.com/blog/2013/01/27/ember-data-in-depth/] explains a lot
+about the state of ember data and how to use it properly..  However it does not explain everything.
 
 == Welcome to Rails
 
