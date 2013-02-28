@@ -1,0 +1,19 @@
+<h2>templates/makes/new.hbs: {{title}}</h2>
+<form>
+  {{#with controller}}
+      <table>
+        <tr>
+          <th>name:</th>
+          <td>{{view Ember.TextField valueBinding="name"}}</td>
+          <td {{bindAttr class="validationErrors.name.messages::hidden"}}>{{validationErrors.name.messages}}</td>
+        </tr>
+        <tr>
+          <th>website:</th>
+          <td>{{view Ember.TextField valueBinding="website"}}</td>
+          <td {{bindAttr class="validationErrors.website.messages::hidden"}}>{{validationErrors.website.messages}}</td>
+        </tr>
+      </table>
+      <button {{action save}}>Save</button>
+  {{/with}}
+</form>
+{{#linkTo "makes"}}Back{{/linkTo}}
