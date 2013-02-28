@@ -4,5 +4,4 @@ Base.MakesEditController = Ember.ObjectController.extend
   save: (object) ->
     model = @get('model')
     transaction = model.get('transaction')
-    if model.validate()
-      transaction.store.commit()
+    transaction.store.commit() if model.validate()

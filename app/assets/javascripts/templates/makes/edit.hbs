@@ -9,12 +9,12 @@
     <tr>
       <th>name:</th>
       <td>{{view Ember.TextField valueBinding="name"}}</td>
-      <td>{{validationErrors.name.messages}}</td>
+      <td {{bindAttr class="validationErrors.name.messages::hidden"}}>{{validationErrors.name.messages}}</td>
     </tr>
     <tr>
       <th>website:</th>
       <td>{{view Ember.TextField valueBinding="website"}}</td>
-      <td>{{validationErrors.website.messages}}</td>
+      <td {{bindAttr class="validationErrors.website.messages::hidden"}}>{{validationErrors.website.messages}}</td>
     </tr>
   </table>
   <button {{action save}}>Save</button>
