@@ -25,3 +25,9 @@ footer {
 form th {
   text-align: right;
 }
+th, td {
+  border: 1px solid black;
+}
+tr:nth-child(odd) {
+  background-color: #aaa;
+}

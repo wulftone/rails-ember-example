@@ -6,12 +6,22 @@
 </p>
 
 {{! Here, Ember has automatically set `model === content` as per conventional defaults }}
-{{#each model}}
-  {{id}}: {{name}}, {{website}}
-  <button {{action edit this}}>Edit</button>
-  <span {{action destroy this}} class='destroy'>x</span><br />
-{{/each}}
-
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Website</th>
+  </tr>
+  {{#each model}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{website}}</td>
+      <td><button {{action edit this}}>Edit</button></td>
+      <td><span {{action destroy this}} class='destroy'>x</span></td>
+    </tr>
+  {{/each}}
+</table>
 {{#linkTo "makes.new"}}Make a new make{{/linkTo}}
 
 <div>
