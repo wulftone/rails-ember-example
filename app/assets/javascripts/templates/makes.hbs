@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<p>
+  Here I use a button instead of a link to move to the edit page. Yay!
+  Just to see if it was possible.  : P
+</p>
+
+{{! Here, Ember has automatically set `model === content` as per conventional defaults }}
+{{#each model}}
+  {{id}}: {{name}}, {{website}}
+  <button {{action edit this}}>Edit</button>
+  <span {{action destroy this}} class='destroy'>x</span><br />
+{{/each}}
+
+{{#linkTo "makes.new"}}Make a new make{{/linkTo}}
+
+<div>
+  {{outlet}}
+</div>
+

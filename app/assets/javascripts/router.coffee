@@ -1,3 +1,7 @@
+Base.Router.reopen
+  location: 'history'
+  rootURL: '/'
+
 ###
 This router seems to be automatically created by
 `Base = Ember.Application.Create()` in application.js.
@@ -16,7 +20,15 @@ pass a parameter to the `linkTo`:
 ###
 Base.Router.map ->
   @route 'about'
+
+  # This is what they show you in the ember guides
   @resource 'cars', ->
     @route 'new'
   @resource 'car', path: '/cars/:car_id', ->
     @route 'edit'
+
+  # And here's a different way!
+  @resource 'makes', ->
+    @route 'new'
+    @route 'edit', path: '/:make_id/edit'
+    @route 'show', path: '/:make_id'

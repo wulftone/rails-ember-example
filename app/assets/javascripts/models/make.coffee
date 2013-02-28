@@ -1,12 +1,17 @@
 attr = DS.attr
 
-Base.Make = DS.Model.extend
+Base.Make = DS.Model.extend Ember.Validations,
   name: attr 'string'
   website: attr 'string'
 
   cars: DS.hasMany 'Base.Car'
 
-  # make: DS.belongsTo 'App.Make'
+  validations:
+    name:
+      presence: true
+    website:
+      presence: true
+
   didLoad: (model) ->
     console.log 'make did Load'
 

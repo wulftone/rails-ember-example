@@ -1,5 +1,5 @@
 class MakeSerializer < ActiveModel::Serializer
-  attributes :id, :website
+  attributes :id, :name, :website
   has_many :cars, embed: :ids
 
   def attributes

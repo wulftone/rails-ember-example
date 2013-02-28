@@ -1,13 +1,11 @@
 class MakesController < ApplicationController
 
   def index
-    @makes = Make.all
-    render json: @makes
+    render json: Make.all
   end
 
   def show
-    @make = Make.find params[:id]
-    render json: @make
+    render json: Make.find(params[:id])
   end
 
   def create
@@ -23,7 +21,7 @@ class MakesController < ApplicationController
   end
 
   def destroy
-    @make = Make.destroy params[:id]
+    Make.destroy params[:id]
     render json: "destroyed"
   end
 

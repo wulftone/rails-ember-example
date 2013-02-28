@@ -1,5 +1,8 @@
 attr = DS.attr
 
+###
+Using ember-validations (https://github.com/lcoq/ember-validations)
+###
 Base.Car = DS.Model.extend Ember.Validations,
   modelName: attr 'string'
   color: attr 'string'
@@ -11,6 +14,9 @@ Base.Car = DS.Model.extend Ember.Validations,
   validations:
     year:
       presence: true
+      numericality:
+        greaterThan: 1850
+        lessThan: -> new Date().getFullYear() + 2
     color:
       presence: true
     modelName:

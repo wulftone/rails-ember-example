@@ -1,0 +1,23 @@
+<h2>templates/makes/edit.hbs: {{title}}</h2>
+
+<p>
+  This is the edit page for a single `Make` model
+</p>
+
+<form>
+  <table>
+    <tr>
+      <th>name:</th>
+      <td>{{view Ember.TextField valueBinding="name"}}</td>
+      <td>{{validationErrors.name.messages}}</td>
+    </tr>
+    <tr>
+      <th>website:</th>
+      <td>{{view Ember.TextField valueBinding="website"}}</td>
+      <td>{{validationErrors.website.messages}}</td>
+    </tr>
+  </table>
+  <button {{action save}}>Save</button>
+  <span {{action destroy}} class='destroy'>Destroy</span><br />
+</form>
+{{#linkTo "makes"}}Back{{/linkTo}}

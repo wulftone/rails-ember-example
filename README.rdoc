@@ -1,12 +1,14 @@
 == Experiment
 
-This is a little example to demonstrate how to use emberjs with rails.  I've
-included some basic usage that you don't normally find online, namely:
+This is a little example to demonstrate how to use emberjs with rails.
+Basically, I just wanted to see what was possible, and try to show a
+complete picture in as simple and comprehensive a way as I could.
+
+I've included some basic usage that you don't normally find online, namely:
 
 * Working with real data from a server
-* Showing both single records and arrays of records
 * Creating and editing that data in forms! OMG! (Why don't more examples have this?!)
-* Regular CRUD actions--create, read, update, delete
+* All regular CRUD actions--create, read, update, delete
 * As many helpful comments as I thought were necessary
 
 Do this:

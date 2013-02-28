@@ -9,4 +9,5 @@
   color: {{view Ember.TextField valueBinding="controller.color"}}
   {{controller.validationErrors.color.messages}}<br />
   <button {{action "submit" controller}}>Submit</button>
+  {{controller.thing}}
 </form>

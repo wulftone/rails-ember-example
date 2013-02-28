@@ -1,13 +1,11 @@
 class CarsController < ApplicationController
 
   def index
-    @cars = Car.all
-    render json: @cars
+    render json: Car.all
   end
 
   def show
-    @car = Car.find params[:id]
-    render json: @car
+    render json: Car.find(params[:id])
   end
 
   def create
@@ -23,7 +21,7 @@ class CarsController < ApplicationController
   end
 
   def destroy
-    @car = Car.destroy params[:id]
+    Car.destroy params[:id]
     render json: "destroyed"
   end
 
